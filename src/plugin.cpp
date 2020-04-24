@@ -15,11 +15,6 @@ KU::PLUGIN::PluginVersion KU_AlsaSound_Plugin::version() const
     return { 1, 0, 0 };
 }
 
-QSet<KU::PLUGIN::PluginInfo> KU_AlsaSound_Plugin::dependencies() const
-{
-    return QSet<KU::PLUGIN::PluginInfo>();
-}
-
 QString KU_AlsaSound_Plugin::license() const
 {
     return "LGPL";
@@ -30,7 +25,7 @@ QIcon KU_AlsaSound_Plugin::icon() const
     return QIcon();
 }
 
-bool KU_AlsaSound_Plugin::initialize(const QSet<KU::PLUGIN::PluginInterface*>& plugins)
+bool KU_AlsaSound_Plugin::initialize()
 {
     return true;
 }
