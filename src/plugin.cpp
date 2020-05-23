@@ -56,6 +56,11 @@ QWidget* KU_AlsaSound_Plugin::createSettingsWidget()
     return widget;
 }
 
+QWidget* KU_AlsaSound_Plugin::createAboutWidget()
+{
+    return nullptr;
+}
+
 bool KU_AlsaSound_Plugin::loadSettings()
 {
     return true;
