@@ -5,6 +5,11 @@ QT             += widgets
 TARGET          = karunit_alsa_sound
 DESTDIR         = $$PWD/../karunit/app/plugins
 
+unix {
+target.path = /usr/local/bin/plugins
+INSTALLS += target
+}
+
 LIBS += -lasound
 
 LIBS += -L$$PWD/../karunit/plugininterface/ -lkarunit_plugininterface
