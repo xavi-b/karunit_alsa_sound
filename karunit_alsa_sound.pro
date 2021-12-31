@@ -1,7 +1,7 @@
 TEMPLATE        = lib
 CONFIG         += plugin c++17
 DEFINES        += QT_DEPRECATED_WARNINGS
-QT             += widgets
+QT             += quick
 TARGET          = karunit_alsa_sound
 DESTDIR         = $$PWD/../karunit/app/plugins
 
@@ -25,3 +25,6 @@ SUBDIRS += \
     src/
 
 include(src/src.pri)
+
+RESOURCES += \
+    karunit_alsa_sound.qrc
