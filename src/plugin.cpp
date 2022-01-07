@@ -44,7 +44,7 @@ bool KU_AlsaSound_Plugin::loadSettings()
     return true;
 }
 
-bool KU_AlsaSound_Plugin::saveSettings() const
+bool KU_AlsaSound_Plugin::saveSettings()
 {
     return KU::Settings::instance()->status() == QSettings::NoError;
 }
